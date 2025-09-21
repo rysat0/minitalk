@@ -6,7 +6,7 @@
 /*   By: rysato <rysato@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/13 15:19:18 by rysato            #+#    #+#             */
-/*   Updated: 2025/09/21 19:39:49 by rysato           ###   ########.fr       */
+/*   Updated: 2025/09/21 20:18:08 by rysato           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,7 +51,7 @@ int	main(int argc, char **argv)
 
 	len = 0;
 	if (argc != 3)
-		return (write(1, "Usage: ./minitalk <server pid> <message>\n", 42), 1);
+		return (write(1, "Usage: ./client <server pid> <message>\n", 40), 1);
 	ser_pid = ft_atoi(argv[1]);
 	msg = argv[2];
 	sa.sa_handler = ack_handler;
